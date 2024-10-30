@@ -1,1 +1,1 @@
-# mmo-xy 梦幻西游
+# mmo-xy
