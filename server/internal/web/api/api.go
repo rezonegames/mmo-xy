@@ -2,13 +2,14 @@ package api
 
 import (
 	"fmt"
+	"mmo-xy/config"
+	"mmo-xy/models"
+	"mmo-xy/pkg/log"
+	"mmo-xy/pkg/z"
+	"mmo-xy/pkg/zweb"
+	"mmo-xy/proto/proto"
+
 	"github.com/gin-gonic/gin"
-	"happy-fish/config"
-	"happy-fish/models"
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	"happy-fish/pkg/zweb"
-	"happy-fish/proto/proto"
 )
 
 func GetGateAddr() (string, error) {

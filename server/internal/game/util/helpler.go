@@ -1,9 +1,10 @@
 package util
 
 import (
+	"mmo-xy/models"
+	"mmo-xy/pkg/z"
+
 	"github.com/lonng/nano/session"
-	"happy-fish/models"
-	"happy-fish/pkg/z"
 )
 
 // BindUser todo：如果是集群模式，使用remote方法同步player数据，并保存到session

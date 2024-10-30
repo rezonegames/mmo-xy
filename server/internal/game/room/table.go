@@ -2,15 +2,16 @@ package room
 
 import (
 	"fmt"
+	"mmo-xy/internal/game/util"
+	"mmo-xy/models"
+	"mmo-xy/pkg/log"
+	"mmo-xy/pkg/z"
+	"mmo-xy/proto/proto"
+	"sync"
+
 	"github.com/lonng/nano"
 	"github.com/lonng/nano/session"
 	"github.com/pkg/errors"
-	"happy-fish/internal/game/util"
-	"happy-fish/models"
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	"happy-fish/proto/proto"
-	"sync"
 )
 
 // Table 桌子

@@ -1,17 +1,18 @@
 package game
 
 import (
-	"github.com/lonng/nano"
-	"github.com/lonng/nano/component"
-	"github.com/lonng/nano/serialize/protobuf"
-	"happy-fish/config"
-	"happy-fish/internal/game/room"
-	service2 "happy-fish/internal/game/service"
-	"happy-fish/internal/game/util"
-	"happy-fish/pkg/log"
+	"mmo-xy/config"
+	"mmo-xy/internal/game/room"
+	service2 "mmo-xy/internal/game/service"
+	"mmo-xy/internal/game/util"
+	"mmo-xy/pkg/log"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/lonng/nano"
+	"github.com/lonng/nano/component"
+	"github.com/lonng/nano/serialize/protobuf"
 )
 
 func StartUp() {

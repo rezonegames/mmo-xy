@@ -1,31 +1,31 @@
 package main
 
 import (
-	"github.com/urfave/cli"
-	"golang.org/x/net/context"
-	"happy-fish/config"
-	"happy-fish/internal/game"
-	"happy-fish/internal/web"
-	"happy-fish/models"
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	random "math/rand"
+	"math/rand"
+	"mmo-xy/config"
+	"mmo-xy/internal/game"
+	"mmo-xy/internal/web"
+	"mmo-xy/models"
+	"mmo-xy/pkg/log"
 	"os"
 	"sync"
+
+	"github.com/urfave/cli"
+	"golang.org/x/net/context"
 )
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "tetris"
+	app.Name = "xy"
 	app.Author = "rezone games"
 	app.Version = "0.0.1"
-	app.Usage = "tetris"
+	app.Usage = "xy"
 	app.Action = serve
 	app.Run(os.Args)
 }
 
 func serve(ctx *cli.Context) error {
-	random.Seed(z.NowUnixMilli())
+	rand.New(rand.NewSource(99))
 	ctx1 := context.Background()
 	log.InitLog()
 	config.InitConfig()

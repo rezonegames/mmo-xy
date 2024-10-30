@@ -1,13 +1,14 @@
 package service
 
 import (
+	"mmo-xy/internal/game/util"
+	"mmo-xy/models"
+	"mmo-xy/pkg/log"
+	"mmo-xy/proto/proto"
+
 	"github.com/lonng/nano"
 	"github.com/lonng/nano/component"
 	"github.com/lonng/nano/session"
-	"happy-fish/internal/game/util"
-	"happy-fish/models"
-	"happy-fish/pkg/log"
-	"happy-fish/proto/proto"
 )
 
 type GateService struct {

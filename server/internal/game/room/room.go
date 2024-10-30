@@ -2,13 +2,14 @@ package room
 
 import (
 	"fmt"
+	"mmo-xy/internal/game/util"
+	"mmo-xy/models"
+	"mmo-xy/pkg/log"
+	"mmo-xy/pkg/z"
+	"mmo-xy/proto/proto"
+
 	"github.com/lonng/nano"
 	"github.com/lonng/nano/session"
-	"happy-fish/internal/game/util"
-	"happy-fish/models"
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	"happy-fish/proto/proto"
 )
 
 type Room struct {

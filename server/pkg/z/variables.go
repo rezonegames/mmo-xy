@@ -2,9 +2,10 @@ package z
 
 import (
 	"fmt"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
 	"strconv"
 	"strings"
+
+	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
 )
 
 type Intslice []int

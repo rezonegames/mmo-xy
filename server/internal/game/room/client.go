@@ -1,11 +1,12 @@
 package room
 
 import (
+	"mmo-xy/config"
+	"mmo-xy/internal/game/util"
+	"mmo-xy/pkg/z"
+	"mmo-xy/proto/proto"
+
 	"github.com/lonng/nano/session"
-	"happy-fish/config"
-	"happy-fish/internal/game/util"
-	"happy-fish/pkg/z"
-	"happy-fish/proto/proto"
 )
 
 type Client struct {

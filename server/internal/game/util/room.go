@@ -1,8 +1,9 @@
 package util
 
 import (
+	"mmo-xy/proto/proto"
+
 	"github.com/lonng/nano/session"
-	"happy-fish/proto/proto"
 )
 
 type RoomOption struct {

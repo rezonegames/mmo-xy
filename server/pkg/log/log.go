@@ -1,9 +1,10 @@
 package log
 
 import (
-	"github.com/sirupsen/logrus"
-	"happy-fish/pkg/z"
+	"mmo-xy/pkg/z"
 	"os"
+
+	"github.com/sirupsen/logrus"
 )
 
 var log = logrus.New()

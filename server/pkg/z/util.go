@@ -3,11 +3,12 @@ package z
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/getsentry/raven-go"
-	"gopkg.in/yaml.v3"
 	"math/rand"
 	"os"
 	"path/filepath"
+
+	"github.com/getsentry/raven-go"
+	"gopkg.in/yaml.v3"
 )
 
 // 注：在server启动的时候已经向全局rand.Default生成了随机种子，这里不用每次都new一个新Rand对象出来
@@ -55,7 +56,7 @@ func Safe(f func()) {
 func GetConfigPath(fileName string) string {
 	var (
 		err  error
-		path = "/configVolume/" + fileName
+		path = "/configVolume/" + fileName // for docker config path
 	)
 
 	if _, err = os.Stat(path); os.IsNotExist(err) {

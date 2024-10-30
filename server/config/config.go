@@ -1,9 +1,9 @@
 package config
 
 import (
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	"happy-fish/proto/proto"
+	"mmo-xy/pkg/log"
+	"mmo-xy/pkg/z"
+	"mmo-xy/proto/proto"
 )
 
 var (

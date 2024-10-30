@@ -1,4 +1,4 @@
-module happy-fish
+module mmo-xy
 
 go 1.18
 

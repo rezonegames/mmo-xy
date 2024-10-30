@@ -4,18 +4,19 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/lonng/nano/benchmark/wsio"
-	"github.com/lonng/nano/serialize/protobuf"
-	"happy-fish/pkg/z"
-	proto2 "happy-fish/proto/proto"
 	"io/ioutil"
 	"log"
+	"mmo-xy/pkg/z"
+	proto2 "mmo-xy/proto/proto"
 	"net/http"
 	"strconv"
 	"strings"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/lonng/nano/benchmark/wsio"
+	"github.com/lonng/nano/serialize/protobuf"
 )
 
 func HttpRequest(path string, params interface{}) ([]byte, error) {

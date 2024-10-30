@@ -2,10 +2,10 @@ package room
 
 import (
 	"fmt"
-	"happy-fish/internal/game/util"
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	"happy-fish/proto/proto"
+	"mmo-xy/internal/game/util"
+	"mmo-xy/pkg/log"
+	"mmo-xy/pkg/z"
+	"mmo-xy/proto/proto"
 )
 
 // NewClient 客户端类型，有可能是机器人，真人，以及结束方式可能不同，现在只有一种真人

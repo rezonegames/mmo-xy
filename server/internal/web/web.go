@@ -2,17 +2,18 @@ package web
 
 import (
 	"bytes"
-	"github.com/gin-contrib/cors"
-	"github.com/gin-gonic/gin"
-	"happy-fish/config"
-	"happy-fish/internal/web/api"
-	"happy-fish/pkg/log"
+	"mmo-xy/config"
+	"mmo-xy/internal/web/api"
+	"mmo-xy/pkg/log"
 	"net/http"
 	_ "net/http/pprof" //  初始化pprof
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/gin-contrib/cors"
+	"github.com/gin-gonic/gin"
 )
 
 type responseBodyWriter struct {

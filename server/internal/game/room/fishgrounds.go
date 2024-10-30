@@ -1,11 +1,11 @@
 package room
 
 import (
-	"happy-fish/config"
-	"happy-fish/internal/game/util"
-	"happy-fish/pkg/log"
-	"happy-fish/pkg/z"
-	"happy-fish/proto/proto"
+	"mmo-xy/config"
+	"mmo-xy/internal/game/util"
+	"mmo-xy/pkg/log"
+	"mmo-xy/pkg/z"
+	"mmo-xy/proto/proto"
 	"strconv"
 	"sync"
 	"time"

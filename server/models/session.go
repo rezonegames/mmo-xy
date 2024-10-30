@@ -2,7 +2,7 @@ package models
 
 import (
 	"fmt"
-	"happy-fish/pkg/z"
+	"mmo-xy/pkg/z"
 	"time"
 )
 
@@ -12,7 +12,7 @@ type Session struct {
 }
 
 func SESSION_KEY(userId string) string {
-	return fmt.Sprintf("session:%d", userId)
+	return fmt.Sprintf("session:%s", userId)
 }
 
 func GetSession(userId string) (*Session, error) {
